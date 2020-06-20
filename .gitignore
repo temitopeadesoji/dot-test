@@ -1,0 +1,17 @@
+node_modules
+.vscode
+# logs
+npm-debug.log
+selenium-debug.log
+tests_output
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+.env
+# Terraform
+.terraform
+terraform.auto.tfvars
+_deployments/terraform/.terraform

@@ -1,0 +1,51 @@
+query search(
+  $param: String!
+  $type: SearchType!
+  $first: Int
+  $last: Int
+  $cursor: String
+) {
+  search(
+    query: $param
+    type: $type
+    first: $first
+    last: $last
+    after: $cursor
+  ) {
+    codeCount
+    issueCount
+    repositoryCount
+    userCount
+    wikiCount
+    pageInfo {
+      endCursor
+      hasNextPage
+      hasPreviousPage
+      startCursor
+    }
+    edges {
+      cursor
+      node {
+        ... on User {
+          avatarUrl
+          bio
+          company
+          email
+          id
+          location
+          name
+          login
+        }
+        ... on Organization {
+          avatarUrl
+          description
+          email
+          id
+          location
+          name
+          login
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+/* 
+ * MAIN.css 
+ * This css is used to manage every global sytle about website
+ * - By Tope Adesoji(@temitopeadesoji)
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* full window width */
+  font-family: "Montserrat", sans-serif !important;
+  padding: 0;
+  background: $white;
+  color: #24292e;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  font-size: 14px;
+  line-height: 1.5;
+  word-spacing: 1px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+h2 {
+  font-size: 24px;
+}
+.text-small {
+  font-size: 12px !important;
+}
+.text-normal {
+  font-weight: 400 !important;
+}
+.text-gray {
+  color: #586069 !important;
+}
+a {
+  text-decoration: none;
+  text-emphasis: none;
+  color: $blue;
+}
+a:hover {
+  /* color: white; */
+  text-decoration: none !important;
+  cursor: pointer;
+}
+.form-control,
+.form-select {
+  min-height: 34px;
+  padding: 6px 8px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24292e;
+  vertical-align: middle;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  border: 1px solid #d1d5da;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: inset 0 1px 2px rgba(27, 31, 35, 0.075);
+  &.input-block {
+    display: block;
+    width: 100%;
+  }
+  &:hover {
+    outline: thick;
+  }
+}
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.btn {
+  color: #24292e;
+  background-color: #eff3f6;
+  background-image: linear-gradient(-180deg, #fafbfc, #eff3f6 90%);
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-repeat: repeat-x;
+  background-position: -1px -1px;
+  background-size: 110% 110%;
+  border: 1px solid rgba(27, 31, 35, 0.2);
+  border-radius: 0.25em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &-sm {
+    padding: 3px 10px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  &-sm-block {
+    @include respond-phone {
+      width: 100%;
+    }
+  }
+  &:active {
+    background-color: #e9ecef;
+    background-image: none;
+    border-color: rgba(27, 31, 35, 0.35);
+    box-shadow: inset 0 0.15em 0.3em rgba(27, 31, 35, 0.15);
+  }
+  &:hover {
+    background-color: #e6ebf1;
+    background-image: linear-gradient(-180deg, #f0f3f6, #e6ebf1 90%);
+    background-position: -0.5em;
+    border-color: rgba(27, 31, 35, 0.35);
+  }
+}
+.relative-position {
+  position: relative !important;
+}
+.absolute-position {
+  position: absolute !important;
+}
+.align-left {
+  text-align: left !important;
+}
